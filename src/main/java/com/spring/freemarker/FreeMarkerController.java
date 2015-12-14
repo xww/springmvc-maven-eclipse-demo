@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.aspectj.apache.bcel.util.ClassPath;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,7 +25,8 @@ public class FreeMarkerController {
 		user.setPassword("12341");
 		User user2 = new User();
 		user2.setUsername("zhangsan2");
-		user2.setPassword("12342");
+		String classPath = System.getProperty("java.class.path");
+		user2.setPassword(classPath);
 		List<User> users = new ArrayList<User>();
 		users.add(user);
 		users.add(user2);
