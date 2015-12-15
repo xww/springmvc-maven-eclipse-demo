@@ -11,11 +11,7 @@ import org.springframework.jdbc.core.RowMapperResultSetExtractor;
 import org.springframework.stereotype.Repository;
 
 import com.spring.entity.*;;  
-/** 
- * guangzhoudaxue  
- * @author xing 
- * 
- */ 
+
 
 @Repository
 public class UserDao {  
@@ -27,15 +23,8 @@ public class UserDao {
     }  
     
     @Autowired
-    private JdbcTemplate jdbcTemplate;  
-      
-    /*public JdbcTemplate getJdbcTemplate() {  
-        return jdbcTemplate;  
-    }  
-    //注入  
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {  
-        this.jdbcTemplate = jdbcTemplate;  
-    }  */
+    private JdbcTemplate jdbcTemplate;    
+    
       
     @SuppressWarnings({ "unchecked", "rawtypes" })  
     public List findAllUser()  

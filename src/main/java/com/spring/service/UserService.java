@@ -8,11 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring.dao.*;
 import com.spring.entity.*; 
-/** 
- * guangzhoudaxue  
- * @author xing 
- * 
- */ 
+
 
 @Service
 public class UserService {
