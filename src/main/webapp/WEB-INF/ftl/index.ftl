@@ -9,7 +9,7 @@
 
 <#list users as user>  
 
-  用户名：${user.username}  
+  用户名：${user.name}  
   密  码：${user.password}  
 
 </#list>

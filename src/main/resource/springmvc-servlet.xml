@@ -27,6 +27,7 @@
 		<property name="requestContextAttribute" value="rc" />
 	 </bean>
 	 
-	 <!-- 数据库配置文件 -->
-	 <context:property-placeholder location="classpath*:jdbc.properties" />
+	 <!-- 数据库配置文件 
+	 <context:property-placeholder location="classpath*:jdbc.properties" />-->
+	 
 </beans>
